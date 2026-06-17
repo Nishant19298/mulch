@@ -9,8 +9,6 @@ const links = [
   { to: "/services", label: "Services" },
   { to: "/projects", label: "Projects" },
   { to: "/gallery", label: "Gallery" },
-  { to: "/testimonials", label: "Testimonials" },
-  { to: "/service-areas", label: "Service Areas" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -49,7 +47,7 @@ export default function Header() {
             />
             <span className="flex flex-col leading-tight whitespace-nowrap">
               <span className="font-display font-extrabold text-[17px] sm:text-lg text-[#1A1A1A]">Mulch &amp; Green</span>
-              <span className="text-[10px] tracking-[0.22em] uppercase text-earth font-semibold">Landscaping</span>
+              <span className="text-[10px] tracking-[0.22em] uppercase text-earth font-semibold">Landscape</span>
             </span>
           </Link>
 

@@ -7,14 +7,14 @@ export function BlogIndex() {
   return (
     <>
       <Seo
-        title="Landscaping Blog — Windsor & Essex Tips | Mulch & Green"
-        description="Landscaping, hardscape, mulch and lawn-care articles written for Windsor and Essex County homeowners."
+        title="Landscape Blog — Windsor & Essex Tips | Mulch & Green"
+        description="Landscape, hardscape, mulch and lawn-care articles written for Windsor and Essex County homeowners."
         canonical={`${SITE_URL}/blog`}
       />
       <section className="py-24 md:py-32 bg-beige/40 text-center">
         <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
           <span className="inline-block px-4 py-1.5 rounded-full bg-white border border-[#EFECD3] text-forest text-[11px] tracking-[0.22em] uppercase font-bold">Blog</span>
-          <h1 className="mt-5 font-display font-extrabold text-4xl sm:text-5xl text-[#1A1A1A] tracking-tight">Landscaping ideas for Windsor &amp; Essex homes.</h1>
+          <h1 className="mt-5 font-display font-extrabold text-4xl sm:text-5xl text-[#1A1A1A] tracking-tight">Landscape ideas for Windsor &amp; Essex homes.</h1>
           <p className="mt-5 text-[#4A4A4A] text-lg">Tips, trends and how-to guides from our crew — written for local homeowners.</p>
         </div>
       </section>

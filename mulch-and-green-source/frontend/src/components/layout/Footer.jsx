@@ -21,11 +21,11 @@ export default function Footer() {
               />
               <div>
                 <div className="font-display font-extrabold text-xl text-white">Mulch &amp; Green</div>
-                <div className="text-[11px] tracking-[0.22em] uppercase text-[#A8C9A2] font-semibold">Landscaping · Windsor &amp; Essex</div>
+                <div className="text-[11px] tracking-[0.22em] uppercase text-[#A8C9A2] font-semibold">Landscape · Windsor &amp; Essex</div>
               </div>
             </div>
             <p className="mt-6 text-[15px] text-[#C9D6C4] leading-relaxed max-w-md">
-              Creating beautiful communities in and around Windsor &amp; Essex. Affordable and realistic designs, impeccable execution, total fulfillment, and trusted landscaping solutions.
+              Creating beautiful communities in and around Windsor &amp; Essex. Affordable and realistic designs, impeccable execution, total fulfillment, and trusted landscape solutions.
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a aria-label="Facebook" href={BRAND.social.facebook} target="_blank" rel="noopener noreferrer" data-testid="social-facebook" className="w-10 h-10 inline-flex items-center justify-center rounded-full border border-white/15 hover:border-grass hover:text-grass transition-colors">
@@ -44,8 +44,6 @@ export default function Footer() {
               <li><Link to="/about" className="hover:text-grass transition-colors" data-testid="footer-about">About</Link></li>
               <li><Link to="/projects" className="hover:text-grass transition-colors" data-testid="footer-projects">Projects</Link></li>
               <li><Link to="/gallery" className="hover:text-grass transition-colors" data-testid="footer-gallery">Gallery</Link></li>
-              <li><Link to="/testimonials" className="hover:text-grass transition-colors" data-testid="footer-testimonials">Testimonials</Link></li>
-              <li><Link to="/service-areas" className="hover:text-grass transition-colors" data-testid="footer-service-areas">Service Areas</Link></li>
             </ul>
           </div>
 

@@ -12,8 +12,6 @@ import Services from "@/pages/Services";
 import ServiceDetail from "@/pages/ServiceDetail";
 import Projects from "@/pages/Projects";
 import Gallery from "@/pages/Gallery";
-import Testimonials from "@/pages/Testimonials";
-import ServiceAreas from "@/pages/ServiceAreas";
 import Contact from "@/pages/Contact";
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
@@ -24,14 +22,14 @@ import SeoAreaPage from "@/pages/SeoAreaPage";
 import { BlogIndex, BlogPost } from "@/pages/Blog";
 
 const SEO_SERVICE_SLUGS = [
-  "landscaping-windsor-on","hardscaping-windsor-on","lawn-care-windsor-on",
+  "landscape-windsor-on","hardscape-windsor-on","lawn-care-windsor-on",
   "mulch-installation-windsor-on","garden-design-windsor-on","patio-installation-windsor-on",
   "retaining-walls-windsor-on","backyard-renovation-windsor-on","outdoor-living-spaces-windsor-on",
 ];
 const SEO_AREA_SLUGS = [
-  "landscaping-lasalle-on","landscaping-tecumseh-on","landscaping-essex-on",
-  "landscaping-amherstburg-on","landscaping-lakeshore-on","landscaping-kingsville-on",
-  "landscaping-leamington-on","landscaping-belle-river-on",
+  "landscape-lasalle-on","landscape-tecumseh-on","landscape-essex-on",
+  "landscape-amherstburg-on","landscape-lakeshore-on","landscape-kingsville-on",
+  "landscape-leamington-on","landscape-belle-river-on",
 ];
 
 export default function App() {
@@ -49,8 +47,6 @@ export default function App() {
             <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/service-areas" element={<ServiceAreas />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />

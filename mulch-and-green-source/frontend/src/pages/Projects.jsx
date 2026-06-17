@@ -12,7 +12,7 @@ export default function Projects() {
     <>
       <Seo
         title="Projects & Portfolio | Mulch & Green Landscape"
-        description="Browse our portfolio of real landscaping, hardscaping, garden and patio projects across Windsor &amp; Essex ."
+        description="Browse our portfolio of real landscape, hardscape, garden and patio projects across Windsor &amp; Essex ."
         canonical="https://mulchngreen.ca/projects"
       />
 

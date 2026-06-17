@@ -8,7 +8,7 @@ export default function About() {
     <>
       <Seo
         title="About Us | Mulch & Green Landscape"
-        description="Learn about Mulch & Green Landscape — a Windsor &amp; Essex landscaping company built on craftsmanship, design excellence, and customer satisfaction."
+        description="Learn about Mulch & Green Landscape — a Windsor &amp; Essex landscape company built on craftsmanship, design excellence, and customer satisfaction."
         canonical="https://mulchngreen.ca/about"
       />
 

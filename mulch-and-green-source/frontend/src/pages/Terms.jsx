@@ -27,7 +27,7 @@ export default function Terms() {
 
           <div>
             <h2 className="font-display font-extrabold text-2xl text-[#1A1A1A] mt-8">2. Service Terms</h2>
-            <p>All landscaping and hardscaping work is performed under a separate written project agreement detailing scope, schedule, materials, and pricing. Estimates provided through the website are non-binding until confirmed in writing.</p>
+            <p>All landscape and hardscape work is performed under a separate written project agreement detailing scope, schedule, materials, and pricing. Estimates provided through the website are non-binding until confirmed in writing.</p>
           </div>
 
           <div>

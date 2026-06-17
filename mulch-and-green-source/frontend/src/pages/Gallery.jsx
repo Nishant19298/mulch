@@ -19,7 +19,7 @@ export default function Gallery() {
     <>
       <Seo
         title="Gallery | Mulch & Green Landscape"
-        description="Real client photos of landscaping, hardscape, garden and outdoor living projects in Windsor &amp; Essex, Windsor &amp; Essex."
+        description="Real client photos of landscape, hardscape, garden and outdoor living projects in Windsor &amp; Essex, Windsor &amp; Essex."
         canonical="https://mulchngreen.ca/gallery"
       />
 

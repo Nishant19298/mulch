@@ -30,7 +30,7 @@ export default function Privacy() {
             <h2 className="font-display font-extrabold text-2xl mt-8">2. How We Use Your Information</h2>
             <ul className="list-disc pl-6 space-y-1">
               <li>To respond to your inquiries and provide estimates</li>
-              <li>To schedule and deliver our landscaping services</li>
+              <li>To schedule and deliver our landscape services</li>
               <li>To send service updates and occasional marketing communications</li>
               <li>To improve our website and customer experience</li>
               <li>To comply with legal and regulatory requirements</li>

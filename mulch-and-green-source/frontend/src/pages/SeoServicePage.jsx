@@ -88,7 +88,7 @@ export default function SeoServicePage() {
           <p className="mt-3 text-[#4A4A4A]">We provide {page.name.toLowerCase()} services in Windsor, LaSalle, Tecumseh, Essex, Amherstburg, Lakeshore, Kingsville, Leamington, Belle River and surrounding communities.</p>
           <div className="mt-5 flex flex-wrap gap-2 justify-center">
             {["Windsor","LaSalle","Tecumseh","Essex","Amherstburg","Lakeshore","Kingsville","Leamington","Belle River"].map((c) => (
-              <Link key={c} to={`/landscaping-${c.toLowerCase().replace(/\s+/g,"-")}-on`} className="px-4 py-1.5 rounded-full bg-white border border-[#EFECD3] text-sm font-semibold text-forest hover:bg-forest hover:text-white transition-colors">{c}</Link>
+              <Link key={c} to={`/landscape-${c.toLowerCase().replace(/\s+/g,"-")}-on`} className="px-4 py-1.5 rounded-full bg-white border border-[#EFECD3] text-sm font-semibold text-forest hover:bg-forest hover:text-white transition-colors">{c}</Link>
             ))}
           </div>
         </div>

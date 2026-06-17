@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Phone, Star, ShieldCheck, Leaf, Award, MapPin, ChevronRight, ChevronDown } from "lucide-react";
 import * as Icons from "lucide-react";
 import Seo from "@/components/Seo";
-import { BRAND, SERVICES, PROJECTS, TESTIMONIALS, SERVICE_AREAS, WHY_CHOOSE_US } from "@/data/site";
+import { BRAND, SERVICES, PROJECTS, WHY_CHOOSE_US } from "@/data/site";
 import { HOMEPAGE_FAQS, SITE_URL } from "@/data/seoContent";
 
 // Hero slideshow — showcases the full range of services in the first 15 seconds.
@@ -11,7 +11,7 @@ const HERO_SLIDES = [
   {
     src: "/projects/IMG_4242.jpg",
     sm: "/projects/IMG_4242-sm.jpg",
-    alt: "Interlock paver patio with stone steps and front-yard landscaping — Mulch & Green Landscape Windsor",
+    alt: "Interlock paver patio with stone steps and front-yard landscape — Mulch & Green Landscape Windsor",
   },
   {
     src: "/projects/IMG_4241.jpg",
@@ -74,9 +74,9 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Mulch & Green Landscape | Landscaping & Hardscaping Windsor ON"
-        description="Mulch & Green Landscape provides professional landscaping, hardscaping, lawn care, mulch installation, garden design, patios, retaining walls, and backyard renovation services throughout Windsor–Essex County, Ontario."
-        keywords="landscaping windsor on, hardscaping windsor ontario, lawn care windsor, mulch installation windsor, garden design windsor, patio installation windsor, retaining walls windsor, backyard renovation windsor essex"
+        title="Mulch & Green Landscape | Landscape & Hardscape Windsor ON"
+        description="Mulch & Green Landscape provides professional landscape, hardscape, lawn care, mulch installation, garden design, patios, retaining walls, and backyard renovation services throughout Windsor–Essex County, Ontario."
+        keywords="landscape windsor on, hardscape windsor ontario, lawn care windsor, mulch installation windsor, garden design windsor, patio installation windsor, retaining walls windsor, backyard renovation windsor essex"
         canonical="https://www.mulchngreen.ca/"
       />
 
@@ -104,13 +104,13 @@ export default function Home() {
               <Leaf className="w-3.5 h-3.5 text-grass" /> Mulch &amp; Green Landscaping
             </span>
             <h1 className="mt-6 font-display font-extrabold text-white text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.05] animate-fade-in-up" data-testid="hero-headline">
-              Landscaping &amp; Hardscaping<br/>Services in <span className="text-grass">Windsor–Essex County</span>
+              Landscape &amp; Hardscape<br/>Services in <span className="text-grass">Windsor–Essex County</span>
             </h1>
             <p className="mt-4 text-grass text-sm sm:text-base font-display font-bold italic tracking-wide animate-fade-in-up" style={{ animationDelay: "60ms" }}>
               Creating beautiful communities in and around Windsor &amp; Essex.
             </p>
             <p className="mt-5 text-[#E8E5C8] text-base sm:text-lg max-w-2xl leading-relaxed animate-fade-in-up" style={{ animationDelay: "120ms" }}>
-              Mulch &amp; Green Landscape provides professional landscaping, hardscaping, lawn care, mulch installation, garden design, patios, retaining walls, and backyard renovation services throughout Windsor–Essex County, Ontario.
+              Mulch &amp; Green Landscape provides professional landscape, hardscape, lawn care, mulch installation, garden design, patios, retaining walls, and backyard renovation services throughout Windsor–Essex County, Ontario.
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-3 animate-fade-in-up" style={{ animationDelay: "240ms" }}>
               <Link to="/contact" data-testid="hero-cta-estimate" className="group inline-flex items-center gap-2 px-7 py-4 rounded-full bg-grass text-[#0F1B11] font-extrabold shadow-[0_18px_40px_-12px_rgba(67,160,71,0.7)] hover:bg-white transition-all hover:-translate-y-0.5">
@@ -279,7 +279,7 @@ export default function Home() {
                 src="/brand/worker.jpg"
                 srcSet="/brand/worker-sm.jpg 800w, /brand/worker.jpg 1600w"
                 sizes="(max-width: 1024px) 100vw, 600px"
-                alt="Mulch & Green Landscapes worker in branded green t-shirt holding landscaping tools in a manicured backyard"
+                alt="Mulch & Green Landscapes worker in branded green t-shirt holding landscape tools in a manicured backyard"
                 className="w-full h-[560px] md:h-[640px] object-cover"
                 loading="lazy"
                 decoding="async"
@@ -301,11 +301,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-14 reveal">
             <span className="text-forest font-bold uppercase tracking-[0.22em] text-xs">What we do</span>
-            <h2 className="mt-3 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#1A1A1A]">Professional landscaping services<br/><span className="brand-gradient">for every Windsor–Essex home.</span></h2>
+            <h2 className="mt-3 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#1A1A1A]">Professional landscape services<br/><span className="brand-gradient">for every Windsor–Essex home.</span></h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { h: "Hardscaping & Outdoor Living Spaces", t: "Interlock patios, fire pits, pergolas, accent walls — designed for our climate, built to last.", l: "/hardscaping-windsor-on" },
+              { h: "Hardscape & Outdoor Living Spaces", t: "Interlock patios, fire pits, pergolas, accent walls — designed for our climate, built to last.", l: "/hardscape-windsor-on" },
               { h: "Patios, Walkways & Retaining Walls", t: "Engineered hardscape on properly compacted bases. Decades of trouble-free use.", l: "/patio-installation-windsor-on" },
               { h: "Mulch Installation & Garden Bed Enhancement", t: "Hardwood, cedar, and decorative-stone mulches installed quickly and cleanly.", l: "/mulch-installation-windsor-on" },
               { h: "Lawn Care & Property Maintenance", t: "Mowing, fertilization, weeding, pruning and seasonal cleanups by reliable local crews.", l: "/lawn-care-windsor-on" },
@@ -322,37 +322,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* LOCAL AREAS SECTION — required by brief */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-12 reveal">
-            <span className="text-forest font-bold uppercase tracking-[0.22em] text-xs">Service Area</span>
-            <h2 className="mt-3 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#1A1A1A]">Areas we serve across Windsor–Essex County</h2>
-            <p className="mt-5 text-[#4A4A4A] text-lg leading-relaxed">
-              Mulch &amp; Green Landscape proudly serves homeowners throughout Windsor–Essex County, including Windsor, LaSalle, Tecumseh, Essex, Amherstburg, Lakeshore, Kingsville, Leamington, and Belle River. Our services include landscaping, hardscaping, lawn care, mulch installation, patio construction, retaining walls, garden design, and complete backyard renovations.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 max-w-4xl mx-auto">
-            {[
-              {c:"Windsor",     slug:"landscaping-windsor-on"},
-              {c:"LaSalle",     slug:"landscaping-lasalle-on"},
-              {c:"Tecumseh",    slug:"landscaping-tecumseh-on"},
-              {c:"Essex",       slug:"landscaping-essex-on"},
-              {c:"Amherstburg", slug:"landscaping-amherstburg-on"},
-              {c:"Lakeshore",   slug:"landscaping-lakeshore-on"},
-              {c:"Kingsville",  slug:"landscaping-kingsville-on"},
-              {c:"Leamington",  slug:"landscaping-leamington-on"},
-              {c:"Belle River", slug:"landscaping-belle-river-on"},
-              {c:"Essex County",slug:"service-areas"},
-            ].map((a) => (
-              <Link key={a.c} to={a.slug.startsWith("service-areas") ? "/service-areas" : `/${a.slug}`} data-testid={`home-area-${a.c.toLowerCase().replace(/\s+/g,'-')}`}
-                className="bg-beige/40 hover:bg-forest hover:text-white border border-[#EFECD3] rounded-2xl px-3 py-3 text-center text-[14px] font-bold text-[#1A1A1A] transition-colors">
-                {a.c}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* FAQ — required by brief, with schema */}
       <HomeFaqSection />
@@ -382,50 +351,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="py-28 bg-beige/40">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center max-w-2xl mx-auto mb-14 reveal">
-            <span className="text-forest font-bold uppercase tracking-[0.22em] text-xs">Reviews</span>
-            <h2 className="mt-3 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#1A1A1A]">Loved by homeowners<br/>across Windsor &amp; Essex.</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {TESTIMONIALS.slice(0, 6).map((t) => (
-              <div key={t.name} className="bg-white rounded-3xl p-7 border border-[#EFECD3] card-lift reveal">
-                <div className="flex items-center gap-1 text-grass">{Array.from({length: t.rating}).map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}</div>
-                <p className="mt-4 text-[#1A1A1A] leading-relaxed">"{t.text}"</p>
-                <div className="mt-6 flex items-center gap-3">
-                  <span className="w-11 h-11 rounded-full bg-forest text-white inline-flex items-center justify-center font-display font-bold">{t.name.split(' ').map(x=>x[0]).slice(0,2).join('')}</span>
-                  <div>
-                    <div className="font-display font-bold text-[15px] text-[#1A1A1A]">{t.name}</div>
-                    <div className="text-xs text-[#4A4A4A]">{t.city}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SERVICE AREAS */}
-      <section className="py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-5 reveal">
-            <span className="text-forest font-bold uppercase tracking-[0.22em] text-xs">Service Areas</span>
-            <h2 className="mt-3 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#1A1A1A]">Serving Windsor &amp; Essex &amp; Windsor &amp; Essex.</h2>
-            <p className="mt-5 text-[#4A4A4A] leading-relaxed">From Windsor to Leamington — we bring premium landscaping to homes across Windsor &amp; Essex County.</p>
-            <Link to="/service-areas" data-testid="home-view-service-areas" className="mt-6 inline-flex items-center gap-2 text-forest font-bold hover:gap-3 transition-all">All service areas <ArrowRight className="w-4 h-4" /></Link>
-          </div>
-          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-3 reveal">
-            {SERVICE_AREAS.slice(0, 12).map((a) => (
-              <div key={a.city} className="rounded-2xl bg-beige/50 border border-[#EFECD3] px-4 py-4 flex items-center gap-2 hover:bg-beige hover:border-forest/40 transition-colors">
-                <MapPin className="w-4 h-4 text-forest" />
-                <span className="font-display font-bold text-[15px] text-[#1A1A1A]">{a.city}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="px-6 sm:px-8 lg:px-12 -mb-8">

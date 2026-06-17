@@ -10,7 +10,7 @@ export default function SeoAreaPage() {
   const slug = pathname.replace(/^\//, "").replace(/\/$/, "");
   const page = SEO_AREAS.find((a) => a.slug === slug);
   const [open, setOpen] = useState(0);
-  if (!page) return <Navigate to="/service-areas" replace />;
+  if (!page) return <Navigate to="/services" replace />;
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -44,8 +44,6 @@ export default function SeoAreaPage() {
           <nav className="text-xs text-[#4A4A4A] mb-4" aria-label="Breadcrumb">
             <Link to="/" className="hover:text-forest">Home</Link>
             <span className="mx-2">/</span>
-            <Link to="/service-areas" className="hover:text-forest">Service Areas</Link>
-            <span className="mx-2">/</span>
             <span className="text-forest font-semibold">{page.city}</span>
           </nav>
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#EFECD3] text-forest text-[11px] tracking-[0.22em] uppercase font-bold"><MapPin className="w-3.5 h-3.5" /> Service Area</span>
@@ -61,7 +59,7 @@ export default function SeoAreaPage() {
       <article className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 space-y-10">
           <section className="reveal">
-            <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-[#1A1A1A]">Landscaping built for {page.city}</h2>
+            <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-[#1A1A1A]">Landscape built for {page.city}</h2>
             <p className="mt-4 text-[#4A4A4A] text-lg leading-relaxed">{page.localNote}</p>
           </section>
           <section className="reveal">
@@ -103,7 +101,7 @@ export default function SeoAreaPage() {
 
       <section className="px-6 sm:px-8 lg:px-12 py-16">
         <div className="max-w-7xl mx-auto rounded-[2rem] bg-forest text-white p-10 md:p-14 flex flex-col md:flex-row gap-6 items-center justify-between">
-          <h2 className="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl">Landscaping quotes for {page.city} homeowners</h2>
+          <h2 className="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl">Landscape quotes for {page.city} homeowners</h2>
           <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-forest font-extrabold hover:bg-beige transition-colors">Get Free Estimate <ArrowRight className="w-4 h-4" /></Link>
         </div>
       </section>

@@ -29,7 +29,7 @@ export default function Contact() {
     <>
       <Seo
         title="Contact Us | Mulch & Green Landscape Windsor &amp; Essex"
-        description="Contact Mulch & Green Landscape for a free landscaping estimate across Windsor &amp; Essex . Call, email or send a message today."
+        description="Contact Mulch & Green Landscape for a free landscape estimate across Windsor &amp; Essex . Call, email or send a message today."
         canonical="https://mulchngreen.ca/contact"
       />
 

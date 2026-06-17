@@ -31,8 +31,8 @@ export const BRAND_PROMISE = {
 };
 
 // Vision & Mission — verbatim from client brief.
-export const VISION = "Create a beautiful community in and around Windsor and Essex through exceptional landscaping solutions.";
-export const MISSION = "Affordable and realistic designs, impeccable execution, total fulfillment, and trusted landscaping solutions.";
+export const VISION = "Create a beautiful community in and around Windsor and Essex through exceptional landscape solutions.";
+export const MISSION = "Affordable and realistic designs, impeccable execution, total fulfillment, and trusted landscape solutions.";
 
 // Why Choose Us — from slide 10.
 export const WHY_CHOOSE_US = [
@@ -181,29 +181,6 @@ export const PROJECTS = [
 
 export const PROJECT_CATEGORIES = ["All", "Backyard", "Frontyard", "Hardscape", "Garden", "Patio", "Lawn Care"];
 
-export const TESTIMONIALS = [
-  { name: "Sarah Mitchell", city: "Windsor, ON",     rating: 5, text: "Mulch & Green completely transformed our backyard into the retreat we always wanted. Affordable and absolutely impeccable execution." },
-  { name: "James O'Connor", city: "LaSalle, ON",     rating: 5, text: "Incredible stone entrance and accent wall! The crew was professional, on-time, and the finish exceeded our expectations." },
-  { name: "Priya Sharma",   city: "Tecumseh, ON",    rating: 5, text: "From design to install, communication was outstanding. Our frontyard is now the best on the block. Worth every dollar." },
-  { name: "Marc Tremblay",  city: "Amherstburg, ON", rating: 5, text: "Reliable and high-quality — their crew handled our sodding and sprinkler system flawlessly. Highly recommend to anyone in Essex County." },
-  { name: "Emily Chen",     city: "Essex, ON",       rating: 5, text: "Beautiful garden design with TFS-principle planting. They truly understand the Windsor & Essex climate and how to make it thrive." },
-  { name: "Daniel Foster",  city: "Lakeshore, ON",   rating: 5, text: "The European-style interlock patio they built is stunning — solid, level, and gorgeous. We host every weekend now. 10/10 experience." },
-];
-
-export const SERVICE_AREAS = [
-  { city: "Windsor",     desc: "Premium landscaping across Windsor's residential neighbourhoods." },
-  { city: "LaSalle",     desc: "Hardscape and garden specialists serving LaSalle homes." },
-  { city: "Tecumseh",    desc: "Backyard transformations and lawn care across Tecumseh." },
-  { city: "Essex",       desc: "Custom design and seasonal maintenance for Essex properties." },
-  { city: "Amherstburg", desc: "Interlocking, patios, and curb-appeal projects." },
-  { city: "Lakeshore",   desc: "Lakefront-friendly landscaping and outdoor living spaces." },
-  { city: "Kingsville",  desc: "Garden design, sod installation, and full-service yard care." },
-  { city: "Leamington",  desc: "Driveways, walkways, and premium stone work." },
-  { city: "Belle River", desc: "Luxury landscaping and outdoor lighting design." },
-  { city: "Harrow",      desc: "Year-round care including seasonal cleanups." },
-  { city: "McGregor",    desc: "Lawn maintenance and irrigation systems." },
-  { city: "Essex County",desc: "Serving towns and rural properties across Essex County." },
-];
 
 // Gallery — ONLY real client photos (top priority per client request).
 export const GALLERY_IMAGES = [

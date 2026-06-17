@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-export default function BeforeAfterSlider({ before, after, beforeSm, afterSm, alt = "Before and after landscaping" }) {
+export default function BeforeAfterSlider({ before, after, beforeSm, afterSm, alt = "Before and after landscape" }) {
   const [pos, setPos] = useState(50);
   const [width, setWidth] = useState(0);
   const ref = useRef(null);

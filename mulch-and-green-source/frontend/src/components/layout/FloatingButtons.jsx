@@ -14,7 +14,7 @@ export default function FloatingButtons() {
   return (
     <div className="fixed z-40 bottom-6 left-4 sm:left-6 flex flex-col items-start gap-3">
       <a
-        href={`https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent("Hi Mulch & Green, I'd like a free landscaping estimate.")}`}
+        href={`https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent("Hi Mulch & Green, I'd like a free landscape estimate.")}`}
         target="_blank"
         rel="noopener noreferrer"
         data-testid="floating-whatsapp"
