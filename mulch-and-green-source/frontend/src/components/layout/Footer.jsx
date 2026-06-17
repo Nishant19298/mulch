@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Heart, Mail, Phone, MapPin } from "lucide-react";
-import { BRAND, SERVICES } from "../../data/site";
+import { BRAND } from "../../data/site";
 
 export default function Footer() {
   return (
@@ -37,33 +37,16 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-3">
             <h4 className="text-white font-display font-bold text-base mb-5">Quick Links</h4>
             <ul className="space-y-3 text-[14px]">
               <li><Link to="/" className="hover:text-grass transition-colors" data-testid="footer-home">Home</Link></li>
               <li><Link to="/about" className="hover:text-grass transition-colors" data-testid="footer-about">About</Link></li>
-              <li><Link to="/projects" className="hover:text-grass transition-colors" data-testid="footer-projects">Projects</Link></li>
               <li><Link to="/gallery" className="hover:text-grass transition-colors" data-testid="footer-gallery">Gallery</Link></li>
-              <li><Link to="/testimonials" className="hover:text-grass transition-colors" data-testid="footer-testimonials">Testimonials</Link></li>
-              <li><Link to="/service-areas" className="hover:text-grass transition-colors" data-testid="footer-service-areas">Service Areas</Link></li>
             </ul>
           </div>
 
-          <div className="lg:col-span-3">
-            <h4 className="text-white font-display font-bold text-base mb-5">Services</h4>
-            <ul className="space-y-3 text-[14px]">
-              {SERVICES.map((s) => (
-                <li key={s.slug}>
-                  <Link to={`/services/${s.slug}`} className="hover:text-grass transition-colors" data-testid={`footer-service-${s.slug}`}>{s.name}</Link>
-                </li>
-              ))}
-              <li>
-                <Link to="/services" className="text-grass font-semibold hover:underline" data-testid="footer-all-services">View all services →</Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-5">
             <h4 className="text-white font-display font-bold text-base mb-5">Contact</h4>
             <ul className="space-y-4 text-[14px]">
               <li className="flex items-start gap-3">
