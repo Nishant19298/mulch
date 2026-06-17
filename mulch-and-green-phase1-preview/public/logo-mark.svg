@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Pine tree silhouette -->
+  <g stroke="currentColor" fill="none">
+    <!-- Tree trunk pointing up -->
+    <path d="M 180 30 L 180 165" stroke-width="11"/>
+    <!-- Tree branches (zig-zag triangle shape going down) -->
+    <path d="M 180 50 L 200 70 L 178 70" stroke-width="8"/>
+    <path d="M 180 80 L 210 105 L 178 105" stroke-width="8"/>
+    <path d="M 180 115 L 220 145 L 178 145" stroke-width="8"/>
+  </g>
+
+  <!-- Field lines (horizontal strokes extending to right) -->
+  <g stroke="currentColor" fill="none" stroke-width="11">
+    <line x1="55"  y1="170" x2="345" y2="170"/>
+    <line x1="65"  y1="200" x2="335" y2="200"/>
+    <line x1="80"  y1="230" x2="320" y2="230"/>
+    <line x1="95"  y1="260" x2="305" y2="260"/>
+    <line x1="115" y1="290" x2="285" y2="290"/>
+  </g>
+</svg>
