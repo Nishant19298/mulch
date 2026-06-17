@@ -1,6 +1,5 @@
 import { Link, useLocation, Navigate } from "react-router-dom";
-import { useState } from "react";
-import { ArrowRight, Phone, ChevronDown, MapPin } from "lucide-react";
+import { ArrowRight, Phone, MapPin } from "lucide-react";
 import Seo from "@/components/Seo";
 import { BRAND } from "@/data/site";
 import { SEO_AREAS, SEO_SERVICES, SITE_URL } from "@/data/seoContent";
@@ -9,18 +8,8 @@ export default function SeoAreaPage() {
   const { pathname } = useLocation();
   const slug = pathname.replace(/^\//, "").replace(/\/$/, "");
   const page = SEO_AREAS.find((a) => a.slug === slug);
-  const [open, setOpen] = useState(0);
   if (!page) return <Navigate to="/services" replace />;
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: page.faq.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -37,7 +26,6 @@ export default function SeoAreaPage() {
     <>
       <Seo title={page.title} description={page.description} canonical={`${SITE_URL}/${page.slug}`} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="py-24 md:py-32 bg-beige/40">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
@@ -77,27 +65,6 @@ export default function SeoAreaPage() {
         </div>
       </article>
 
-      <section className="py-20 bg-beige/40">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-[#1A1A1A] text-center">{page.city} — frequently asked questions</h2>
-          <div className="mt-10 space-y-3">
-            {page.faq.map((f, i) => {
-              const isOpen = open === i;
-              return (
-                <button key={f.q} onClick={() => setOpen(isOpen ? -1 : i)} className="w-full text-left bg-white hover:bg-beige/40 rounded-2xl border border-[#EFECD3] p-5 transition-colors">
-                  <div className="flex items-center justify-between gap-4">
-                    <span className="font-display font-bold text-[#1A1A1A] text-[16px]">{f.q}</span>
-                    <ChevronDown className={`w-5 h-5 text-forest flex-none transition-transform ${isOpen ? "rotate-180" : ""}`} />
-                  </div>
-                  <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-48 mt-3" : "max-h-0"}`}>
-                    <p className="text-[#4A4A4A] leading-relaxed">{f.a}</p>
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       <section className="px-6 sm:px-8 lg:px-12 py-16">
         <div className="max-w-7xl mx-auto rounded-[2rem] bg-forest text-white p-10 md:p-14 flex flex-col md:flex-row gap-6 items-center justify-between">

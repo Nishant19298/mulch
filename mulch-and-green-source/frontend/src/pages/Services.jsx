@@ -9,7 +9,7 @@ export default function Services() {
     <>
       <Seo
         title="Our Services | Mulch & Green Landscaping"
-        description="Six core landscape services: Landscape Design, Hardscape, Softscape, Drainage & Lawn Solutions, Planting & Garden Design, and Maintenance Services — across Windsor & Essex County."
+        description="Six core landscape services: Landscape Design, Hardscape, Softscape, Drainage & Lawn Solutions, Planting & Garden Design, and Maintenance — across Windsor & Essex County."
         canonical="https://mulchngreen.ca/services"
       />
 

@@ -68,7 +68,7 @@ export const SERVICES = [
   },
   {
     slug: "hardscape-services",
-    name: "Hardscape Services",
+    name: "Hardscape",
     icon: "Layers",
     short: "European-style patios, concrete driveways, accent walls, stone borders, fences and more.",
     items: [
@@ -84,7 +84,7 @@ export const SERVICES = [
   },
   {
     slug: "softscape-services",
-    name: "Softscape Services",
+    name: "Softscape",
     icon: "Flower2",
     short: "Kentucky Blue Grass sodding, sprinkler systems, drip irrigation, mulching & stone covers.",
     items: [
@@ -126,7 +126,7 @@ export const SERVICES = [
   },
   {
     slug: "maintenance-services",
-    name: "Maintenance Services",
+    name: "Maintenance",
     icon: "Scissors",
     short: "Lawn mowing, plant-bed weeding, certified pesticide sprays, pruning and tree cutting.",
     items: [
@@ -154,14 +154,7 @@ export const SERVICE_DETAILS = {
     { step: "02", title: "Design",    text: "Manual sketches and software-generated 3D renders for clear visualization." },
     { step: "03", title: "Build",     text: "Skilled crews install with premium materials and impeccable craftsmanship." },
     { step: "04", title: "Maintain",  text: "Optional maintenance plans keep your outdoor space looking pristine." },
-  ],
-  faq: [
-    { q: "Do you offer free estimates?", a: "Yes. We provide free, no-obligation estimates for all projects in the Windsor & Essex region." },
-    { q: "Are you licensed and insured?", a: "Absolutely. Mulch & Green Landscaping is fully licensed and carries comprehensive liability coverage." },
-    { q: "How long does a typical project take?", a: "Small jobs wrap up in 1–3 days. Full design-build projects typically take 2–4 weeks depending on scope and weather." },
-    { q: "Do you guarantee your work?", a: "Yes — we stand behind our workmanship and pass through full manufacturer warranties on installed materials." },
-    { q: "Do you offer ongoing maintenance?", a: "Yes — lawn mowing, weeding, certified pesticide sprays, pruning and tree cutting are all available on a seasonal plan." },
-  ],
+  ],
 };
 
 export const PROJECTS = [

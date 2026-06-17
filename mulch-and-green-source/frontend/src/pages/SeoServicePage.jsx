@@ -1,6 +1,5 @@
 import { Link, useLocation, Navigate } from "react-router-dom";
-import { ArrowRight, Phone, ChevronRight, Check, ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { ArrowRight, Phone, ChevronRight, Check } from "lucide-react";
 import Seo from "@/components/Seo";
 import { BRAND } from "@/data/site";
 import { SEO_SERVICES, SITE_URL } from "@/data/seoContent";
@@ -9,19 +8,7 @@ export default function SeoServicePage() {
   const { pathname } = useLocation();
   const slug = pathname.replace(/^\//, "").replace(/\/$/, "");
   const page = SEO_SERVICES.find((s) => s.slug === slug);
-  const [open, setOpen] = useState(0);
   if (!page) return <Navigate to="/services" replace />;
-
-  // FAQ schema for THIS page
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: page.faq.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -37,7 +24,6 @@ export default function SeoServicePage() {
     <>
       <Seo title={page.title} description={page.description} canonical={`${SITE_URL}/${page.slug}`} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* HERO */}
       <section className="py-24 md:py-32 bg-beige/40">
@@ -90,29 +76,6 @@ export default function SeoServicePage() {
             {["Windsor","LaSalle","Tecumseh","Essex","Amherstburg","Lakeshore","Kingsville","Leamington","Belle River"].map((c) => (
               <Link key={c} to={`/landscape-${c.toLowerCase().replace(/\s+/g,"-")}-on`} className="px-4 py-1.5 rounded-full bg-white border border-[#EFECD3] text-sm font-semibold text-forest hover:bg-forest hover:text-white transition-colors">{c}</Link>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
-          <h2 className="font-display font-extrabold text-3xl sm:text-4xl text-[#1A1A1A] text-center">Frequently asked questions</h2>
-          <div className="mt-10 space-y-3">
-            {page.faq.map((f, i) => {
-              const isOpen = open === i;
-              return (
-                <button key={f.q} onClick={() => setOpen(isOpen ? -1 : i)} className="w-full text-left bg-beige/30 hover:bg-beige/60 rounded-2xl border border-[#EFECD3] p-5 transition-colors">
-                  <div className="flex items-center justify-between gap-4">
-                    <span className="font-display font-bold text-[#1A1A1A] text-[16px]">{f.q}</span>
-                    <ChevronDown className={`w-5 h-5 text-forest flex-none transition-transform ${isOpen ? "rotate-180" : ""}`} />
-                  </div>
-                  <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-48 mt-3" : "max-h-0"}`}>
-                    <p className="text-[#4A4A4A] leading-relaxed">{f.a}</p>
-                  </div>
-                </button>
-              );
-            })}
           </div>
         </div>
       </section>

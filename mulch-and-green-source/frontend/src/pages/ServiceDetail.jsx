@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
-import { ArrowRight, ChevronDown, Check, Phone, Leaf } from "lucide-react";
+import { ArrowRight, Check, Phone, Leaf } from "lucide-react";
 import * as Icons from "lucide-react";
 import Seo from "@/components/Seo";
 import { SERVICES, SERVICE_DETAILS, BRAND } from "@/data/site";
@@ -25,7 +24,6 @@ const detailImagesSm = [
 export default function ServiceDetail() {
   const { slug } = useParams();
   const service = SERVICES.find((s) => s.slug === slug);
-  const [open, setOpen] = useState(0);
 
   if (!service) return <Navigate to="/services" replace />;
   const Icon = Icons[service.icon] || Leaf;
@@ -109,37 +107,6 @@ export default function ServiceDetail() {
                 <div className="mt-2 text-sm text-[#4A4A4A] leading-relaxed">{p.text}</div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="py-24 bg-white">
-        <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center mb-12 reveal">
-            <span className="text-forest font-bold uppercase tracking-[0.22em] text-xs">FAQ</span>
-            <h2 className="mt-3 font-display font-extrabold text-3xl sm:text-4xl text-[#1A1A1A]">Questions about {service.name}</h2>
-          </div>
-          <div className="space-y-3">
-            {SERVICE_DETAILS.faq.map((f, i) => {
-              const isOpen = open === i;
-              return (
-                <button
-                  key={f.q}
-                  data-testid={`faq-item-${i}`}
-                  onClick={() => setOpen(isOpen ? -1 : i)}
-                  className="w-full text-left bg-beige/30 hover:bg-beige/60 transition-colors rounded-2xl border border-[#EFECD3] p-5"
-                >
-                  <div className="flex items-center justify-between gap-4">
-                    <span className="font-display font-bold text-[#1A1A1A] text-[16px]">{f.q}</span>
-                    <ChevronDown className={`w-5 h-5 text-forest flex-none transition-transform ${isOpen ? "rotate-180" : ""}`} />
-                  </div>
-                  <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-40 mt-3" : "max-h-0"}`}>
-                    <p className="text-[#4A4A4A] leading-relaxed">{f.a}</p>
-                  </div>
-                </button>
-              );
-            })}
           </div>
         </div>
       </section>

@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { ArrowRight, Phone, Star, ShieldCheck, Leaf, Award, MapPin, ChevronRight, ChevronDown } from "lucide-react";
+import { ArrowRight, Phone, Star, ShieldCheck, Leaf, Award, MapPin, ChevronRight } from "lucide-react";
 import * as Icons from "lucide-react";
 import Seo from "@/components/Seo";
 import { BRAND, SERVICES, PROJECTS, WHY_CHOOSE_US } from "@/data/site";
-import { HOMEPAGE_FAQS, SITE_URL } from "@/data/seoContent";
 
 // Hero slideshow — showcases the full range of services in the first 15 seconds.
 const HERO_SLIDES = [
@@ -25,45 +24,6 @@ const HERO_SLIDES = [
   },
 ];
 
-function HomeFaqSection() {
-  const [open, setOpen] = useState(0);
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: HOMEPAGE_FAQS.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
-  return (
-    <section className="py-24 bg-beige/40">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <div className="max-w-3xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="text-center mb-12 reveal">
-          <span className="text-forest font-bold uppercase tracking-[0.22em] text-xs">FAQ</span>
-          <h2 className="mt-3 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[#1A1A1A]">Frequently asked questions</h2>
-        </div>
-        <div className="space-y-3">
-          {HOMEPAGE_FAQS.map((f, i) => {
-            const isOpen = open === i;
-            return (
-              <button key={f.q} onClick={() => setOpen(isOpen ? -1 : i)} data-testid={`home-faq-${i}`} className="w-full text-left bg-white hover:bg-white rounded-2xl border border-[#EFECD3] p-5 transition-colors">
-                <div className="flex items-center justify-between gap-4">
-                  <span className="font-display font-bold text-[#1A1A1A] text-[16px]">{f.q}</span>
-                  <ChevronDown className={`w-5 h-5 text-forest flex-none transition-transform ${isOpen ? "rotate-180" : ""}`} />
-                </div>
-                <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-60 mt-3" : "max-h-0"}`}>
-                  <p className="text-[#4A4A4A] leading-relaxed">{f.a}</p>
-                </div>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
-}
 
 export default function Home() {
   const [slide, setSlide] = useState(0);
@@ -104,7 +64,7 @@ export default function Home() {
               <Leaf className="w-3.5 h-3.5 text-grass" /> Mulch &amp; Green Landscaping
             </span>
             <h1 className="mt-6 font-display font-extrabold text-white text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.05] animate-fade-in-up" data-testid="hero-headline">
-              Landscape &amp; Hardscape<br/>Services in <span className="text-grass">Windsor–Essex County</span>
+              Landscape &amp; Hardscape<br/>in <span className="text-grass">Windsor–Essex County</span>
             </h1>
             <p className="mt-4 text-grass text-sm sm:text-base font-display font-bold italic tracking-wide animate-fade-in-up" style={{ animationDelay: "60ms" }}>
               Creating beautiful communities in and around Windsor &amp; Essex.
@@ -323,8 +283,6 @@ export default function Home() {
       </section>
 
 
-      {/* FAQ — required by brief, with schema */}
-      <HomeFaqSection />
 
       {/* PROCESS */}
       <section className="py-28 bg-[#0F1B11] text-white relative overflow-hidden">

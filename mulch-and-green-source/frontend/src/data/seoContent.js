@@ -10,10 +10,10 @@ export const SEO_SERVICES = [
   {
     slug: "landscape-windsor-on",
     name: "Landscape",
-    title: "Landscape Services in Windsor, Ontario | Mulch & Green",
+    title: "Landscape in Windsor, Ontario | Mulch & Green",
     description:
       "Professional landscape services in Windsor, Ontario and across Windsor–Essex County. Design, planting, sod, and full property transformations.",
-    h1: "Landscape Services in Windsor, Ontario",
+    h1: "Landscape in Windsor, Ontario",
     intro:
       "Mulch & Green Landscape delivers full-service residential landscape across Windsor and the wider Windsor–Essex region. From the first hand-drawn sketch to the last shovel of soil, our team designs and installs outdoor spaces that fit your home, your budget, and the climate of Southwestern Ontario.",
     sections: [
@@ -43,11 +43,7 @@ export const SEO_SERVICES = [
         body: "We've refined a simple process so projects stay on schedule and on budget: Consult → Design → Build → Maintain. Every phase has a single point of contact, so you always know what's happening and when.",
       },
     ],
-    faq: [
-      { q: "How much does landscape cost in Windsor, Ontario?",         a: "Costs vary with scope and materials, but small refresh projects typically start around $2,500 while full-property design-builds run higher. We provide free, itemized estimates so there are no surprises." },
-      { q: "What's the best time of year to start a landscape project?", a: "Spring (April–June) and early fall (September–October) are ideal in Windsor. We schedule projects from late March through mid-November depending on weather." },
-      { q: "Do you offer landscape design only, without installation?",     a: "Yes. Our designers can produce a stand-alone manual or 3D plan you can take to any contractor — although clients usually prefer to keep the design and build under one roof." },
-    ],
+
     related: ["hardscape-windsor-on", "garden-design-windsor-on", "mulch-installation-windsor-on"],
   },
   {
@@ -56,12 +52,12 @@ export const SEO_SERVICES = [
     title: "Hardscape Contractor in Windsor, ON | Patios, Walls & Walkways",
     description:
       "Professional hardscape in Windsor, Ontario — interlock patios, concrete driveways, retaining walls, walkways and accent walls across Windsor–Essex.",
-    h1: "Hardscape Services in Windsor, Ontario",
+    h1: "Hardscape in Windsor, Ontario",
     intro:
       "From European-style interlock patios to concrete driveways and stacked-stone accent walls, our hardscape division gives Windsor properties the structure, function, and lasting curb appeal they deserve.",
     sections: [
       {
-        h2: "Hardscape services we offer",
+        h2: "What our hardscape includes",
         body: "We're a full-service hardscape contractor. Every install starts with a properly compacted aggregate base — the foundation that determines whether a patio looks great for 3 years or 30. We use commercial-grade plate compactors, polymeric jointing sand, and quality pavers from trusted Canadian suppliers.",
         bullets: [
           "European-style interlock patios",
@@ -81,20 +77,16 @@ export const SEO_SERVICES = [
         body: "We measure your space, walk through paver and stone options at our showroom partners, and provide a written estimate that breaks out excavation, base, materials, and labour separately. No hidden fees.",
       },
     ],
-    faq: [
-      { q: "How long does an interlock patio take to install?",         a: "A standard 300–500 sq ft backyard patio typically takes 5–10 working days, weather permitting. Larger or multi-level projects can run 2–3 weeks." },
-      { q: "Do you warranty your hardscape work?",                       a: "Yes. We back our workmanship on every installed paver and wall, in addition to the manufacturer's warranty on the material itself." },
-      { q: "Can hardscape be installed during Windsor winters?",         a: "We schedule hardscape from April through November. Freezing temperatures interfere with polymeric sand activation and proper base compaction." },
-    ],
+
     related: ["patio-installation-windsor-on", "retaining-walls-windsor-on", "outdoor-living-spaces-windsor-on"],
   },
   {
     slug: "lawn-care-windsor-on",
     name: "Lawn Care",
-    title: "Lawn Care Services in Windsor, ON | Mowing, Fertilizing & More",
+    title: "Lawn Care in Windsor, ON | Mowing, Fertilizing & More",
     description:
       "Reliable lawn care across Windsor–Essex: mowing, edging, fertilizing, weeding, certified pesticide application and seasonal cleanups.",
-    h1: "Lawn Care Services in Windsor, Ontario",
+    h1: "Lawn Care in Windsor, Ontario",
     intro:
       "A healthy lawn does more than look good — it cools your property, manages stormwater, and lifts your home's resale value. Our lawn care crews keep Windsor and Essex County properties looking their best from the first spring cleanup through the final fall leaf removal.",
     sections: [
@@ -119,11 +111,7 @@ export const SEO_SERVICES = [
         body: "Reliable service is the most-asked-for thing in lawn care — and the hardest to deliver. We show up when we say we will, finish what we start, and stand behind every visit. If something doesn't look right, we come back and make it right.",
       },
     ],
-    faq: [
-      { q: "How often should my Windsor lawn be mowed?",                a: "Weekly during peak growth (May–July) and every 10–14 days the rest of the season. We never remove more than one-third of the blade height per cut." },
-      { q: "Do you offer one-time clean-ups?",                          a: "Yes. We offer spring and fall clean-ups as one-time services as well as part of seasonal contracts." },
-      { q: "Are your pesticide sprays safe around children and pets?",  a: "Our applicators are provincially certified. We use products and dosages approved for residential properties and always communicate any re-entry intervals." },
-    ],
+
     related: ["mulch-installation-windsor-on", "garden-design-windsor-on", "landscape-windsor-on"],
   },
   {
@@ -154,11 +142,7 @@ export const SEO_SERVICES = [
         body: "Beyond aesthetics, fresh mulch reduces irrigation needs by up to 30%, smothers weeds before they germinate, and slowly enriches the soil as it breaks down. Most Windsor homeowners top up beds every 1–2 years for the best look and plant health.",
       },
     ],
-    faq: [
-      { q: "When is the best time to mulch in Windsor?",   a: "Mid-April through late May is ideal — soil has warmed and weeds haven't yet exploded. We also do fall mulching for winter protection." },
-      { q: "Do you remove the old mulch first?",            a: "We assess every property. If existing mulch is decomposed, we top-dress over it. If it's matted or moldy, we remove it first to give plants a healthier base." },
-      { q: "Can you match the mulch colour to my home?",    a: "Yes. We carry natural, brown, and black-dyed mulches plus a range of decorative stone, so we can match any home exterior." },
-    ],
+
     related: ["garden-design-windsor-on", "lawn-care-windsor-on", "landscape-windsor-on"],
   },
   {
@@ -191,11 +175,7 @@ export const SEO_SERVICES = [
         body: "Optional seasonal visits keep beds weed-free and shrubs in shape. Many of our garden-design clients add a simple bi-weekly maintenance plan so the design never loses its edge.",
       },
     ],
-    faq: [
-      { q: "Do you guarantee the plants you install?",  a: "Yes. We provide a one-season warranty on plant material installed by our team, subject to reasonable care." },
-      { q: "Can you design low-maintenance gardens?",   a: "Absolutely. Our 'low-touch' garden plans rely on drought-tolerant perennials, mulched beds and drip irrigation to minimize upkeep." },
-      { q: "Do you incorporate vegetable gardens?",     a: "Yes. Many clients ask for a discreet kitchen-garden bed with drip irrigation — we love designing them in." },
-    ],
+
     related: ["mulch-installation-windsor-on", "landscape-windsor-on", "outdoor-living-spaces-windsor-on"],
   },
   {
@@ -227,11 +207,7 @@ export const SEO_SERVICES = [
         body: "We typically size patios around how you actually use them — dinner parties, fire-pit lounging, hot-tub pad, kids' play space. A common Windsor footprint is a 14' × 16' main dining area with a connected 10' × 10' lounge curve, planted on all sides.",
       },
     ],
-    faq: [
-      { q: "Interlock or concrete — which is better?",            a: "Interlock is easier to repair and adapt; concrete is faster to install and slightly cheaper up front. We'll recommend based on your space and budget." },
-      { q: "Will my patio settle or shift over time?",           a: "Not with a proper base. Our 8-inch compacted limestone base + edge restraints + polymeric sand routinely lasts 25+ years without movement." },
-      { q: "Can I add a pergola or fire pit later?",              a: "Yes. We plan footings and conduit during installation so you can add structures, lighting, or a gas line down the road." },
-    ],
+
     related: ["retaining-walls-windsor-on", "hardscape-windsor-on", "outdoor-living-spaces-windsor-on"],
   },
   {
@@ -263,11 +239,7 @@ export const SEO_SERVICES = [
         body: "Walls over 1 metre may require a building permit in some Windsor and Essex County municipalities. We handle the engineering drawings and permit liaison so the project stays compliant from start to finish.",
       },
     ],
-    faq: [
-      { q: "Do I need a permit for a retaining wall in Windsor?",          a: "Most municipalities require a permit and engineered drawings for walls over 1 m (3.3 ft). We handle the entire process." },
-      { q: "How long do segmental-block walls last?",                       a: "A properly engineered block wall with drainage and geogrid will hold up 40+ years with minimal maintenance." },
-      { q: "Can a retaining wall double as garden bed edging?",             a: "Yes — short seat walls and tiered planters are popular ways to turn structural walls into beautiful landscape features." },
-    ],
+
     related: ["hardscape-windsor-on", "patio-installation-windsor-on", "backyard-renovation-windsor-on"],
   },
   {
@@ -301,11 +273,7 @@ export const SEO_SERVICES = [
         body: "When the same team designs and builds, there are no awkward handoffs, no finger-pointing, and no surprise change orders. You have one point of contact and one accountable partner for the entire renovation.",
       },
     ],
-    faq: [
-      { q: "What's the ROI on a backyard renovation in Windsor?",   a: "Quality outdoor living spaces typically return 60–80% of project cost at resale in our market, plus daily quality-of-life value." },
-      { q: "Can you work with an existing pool or deck?",            a: "Yes — we often integrate renovations around existing pools, decks, sheds and mature trees." },
-      { q: "Do you offer financing or staged installs?",             a: "We can phase a renovation across two seasons if budget is a concern — patio in year one, planting and lighting in year two." },
-    ],
+
     related: ["patio-installation-windsor-on", "outdoor-living-spaces-windsor-on", "landscape-windsor-on"],
   },
   {
@@ -339,11 +307,7 @@ export const SEO_SERVICES = [
         body: "We produce both a manual sketch and a 3D render so you can walk through the design before the dig. From there, our certified crews handle every trade: hardscape, fencing, electrical (with licensed partners), gas (where applicable), planting, and lighting.",
       },
     ],
-    faq: [
-      { q: "What's the smallest outdoor living space you'll design?",  a: "We've designed retreats as compact as 200 sq ft for in-town Windsor lots — small doesn't mean less impactful." },
-      { q: "Do you handle outdoor kitchen plumbing and gas?",          a: "We coordinate with licensed plumbing, gas and electrical partners to keep everything to code." },
-      { q: "Can I add a pool to my outdoor living space later?",       a: "Yes — we routinely design hardscape and grading with future pool installs in mind." },
-    ],
+
     related: ["patio-installation-windsor-on", "backyard-renovation-windsor-on", "hardscape-windsor-on"],
   },
 ];
@@ -351,11 +315,6 @@ export const SEO_SERVICES = [
 /* ============================================================
    SERVICE AREA LANDING PAGES (9 locations)
 ============================================================ */
-const AREA_FAQ = (city) => [
-  { q: `Do you service ${city}?`,                          a: `Yes — ${city} is one of our core service areas. We deliver landscape, hardscape, lawn care, mulch installation and complete backyard renovations to homeowners across ${city} every season.` },
-  { q: `How quickly can you start a project in ${city}?`,  a: `Smaller jobs (mulching, lawn care, plantings) can usually start within 1–2 weeks. Larger design-build projects are typically scheduled 4–8 weeks out depending on the season.` },
-  { q: `Do you provide free estimates in ${city}?`,        a: `Yes. We provide free, no-obligation on-site estimates for every landscape and hardscape project in ${city} and the surrounding Essex County area.` },
-];
 
 export const SEO_AREAS = [
   {
@@ -366,7 +325,7 @@ export const SEO_AREAS = [
     h1: "Landscape in Windsor, Ontario",
     intro: "From South Walkerville to Riverside, Forest Glade to South Windsor, we design and build landscapes that fit every Windsor neighbourhood and lot size. Mulch & Green Landscape is locally owned, fully insured, and proud to serve homeowners across the City of Windsor.",
     localNote: "Windsor's variety of lot sizes — from compact in-town bungalows to large Riverside estates — means no two projects look alike. We tailor every design to your specific street, soil and sun exposure.",
-    faq: AREA_FAQ("Windsor"),
+
   },
   {
     slug: "landscape-lasalle-on",
@@ -376,7 +335,7 @@ export const SEO_AREAS = [
     h1: "Landscape in LaSalle, Ontario",
     intro: "LaSalle's larger lots and family-focused neighbourhoods are perfect for outdoor living. We've helped families across Heritage, Sandwich South, and the Front Road corridor design backyards that work for kids, entertaining, and long-term value.",
     localNote: "LaSalle's clay-heavy soils need the right grading and drainage solutions — something our crews handle on every project, large or small.",
-    faq: AREA_FAQ("LaSalle"),
+
   },
   {
     slug: "landscape-tecumseh-on",
@@ -386,7 +345,7 @@ export const SEO_AREAS = [
     h1: "Landscape in Tecumseh, Ontario",
     intro: "From St. Anne's to Manning Road, Tecumseh's mix of established and growing neighbourhoods makes for some of the most rewarding landscape work in the region. We design and build to the specific character of each Tecumseh street.",
     localNote: "Many Tecumseh homes feature mature trees and shaded front yards — we design plant palettes that thrive in low light and complement the tree canopy.",
-    faq: AREA_FAQ("Tecumseh"),
+
   },
   {
     slug: "landscape-essex-on",
@@ -396,7 +355,7 @@ export const SEO_AREAS = [
     h1: "Landscape in Essex, Ontario",
     intro: "From the Town of Essex centre to Maidstone and Harrow concession roads, our crews handle everything from small front-yard refreshes to acreage-scale landscape plans for Essex residents.",
     localNote: "Essex properties often combine town-lot and rural elements. We design transitions — sweeping driveways, mixed planting beds, natural-stone borders — that bridge both.",
-    faq: AREA_FAQ("Essex"),
+
   },
   {
     slug: "landscape-amherstburg-on",
@@ -406,7 +365,7 @@ export const SEO_AREAS = [
     h1: "Landscape in Amherstburg, Ontario",
     intro: "Amherstburg's historic homes and waterfront properties deserve thoughtful landscape. We design with respect for the architectural character of homes from Sandwich South to Malden Park and the Boblo waterfront.",
     localNote: "Amherstburg's waterfront and historical properties often benefit from heritage-appropriate plantings and natural-stone hardscape — both specialties of our design team.",
-    faq: AREA_FAQ("Amherstburg"),
+
   },
   {
     slug: "landscape-lakeshore-on",
@@ -416,7 +375,7 @@ export const SEO_AREAS = [
     h1: "Landscape in Lakeshore, Ontario",
     intro: "Lakeshore's lakefront and rural properties offer some of the best outdoor living opportunities in Essex County. We design landscapes that take advantage of waterfront views, generous lots, and the slightly warmer microclimate.",
     localNote: "Many Lakeshore properties are exposed to lake winds — we choose plants and stake young trees properly so the design holds up year one.",
-    faq: AREA_FAQ("Lakeshore"),
+
   },
   {
     slug: "landscape-kingsville-on",
@@ -426,7 +385,7 @@ export const SEO_AREAS = [
     h1: "Landscape in Kingsville, Ontario",
     intro: "From Cottam to Ruthven and the Kingsville waterfront, our crews bring design-build landscape to one of Ontario's most charming small-town settings.",
     localNote: "Kingsville's microclimate (Canada's southernmost mainland) lets us specify a slightly broader plant palette — including some specimens that struggle further north.",
-    faq: AREA_FAQ("Kingsville"),
+
   },
   {
     slug: "landscape-leamington-on",
@@ -436,7 +395,7 @@ export const SEO_AREAS = [
     h1: "Landscape in Leamington, Ontario",
     intro: "Leamington's lakefront, large lots and mild microclimate make it one of the best places in Ontario to invest in outdoor living. We design and build landscapes for both town and rural properties across Leamington.",
     localNote: "Leamington's loamy soils and longer growing season let us push planting design further — a real treat for our design team.",
-    faq: AREA_FAQ("Leamington"),
+
   },
   {
     slug: "landscape-belle-river-on",
@@ -446,7 +405,7 @@ export const SEO_AREAS = [
     h1: "Landscape in Belle River, Ontario",
     intro: "Belle River and surrounding Lakeshore communities have a tight-knit, family-oriented vibe — and our outdoor living designs reflect that. Spaces designed for kids, neighbours, summer cookouts and quiet morning coffees.",
     localNote: "Belle River's proximity to Lake St. Clair influences both wind exposure and humidity — both of which we plan for in plant selection.",
-    faq: AREA_FAQ("Belle River"),
+
   },
 ];
 
@@ -547,16 +506,3 @@ export const BLOG_POSTS = [
   },
 ];
 
-/* ============================================================
-   HOMEPAGE FAQs
-============================================================ */
-export const HOMEPAGE_FAQS = [
-  { q: "What areas do you serve?",                a: "We serve Windsor, LaSalle, Tecumseh, Essex, Amherstburg, Lakeshore, Kingsville, Leamington, Belle River and the rest of Windsor–Essex County." },
-  { q: "What landscape services do you offer?", a: "Landscape design, hardscape, softscape, drainage & lawn solutions, planting & garden design, and ongoing maintenance services. See our services page for the full breakdown." },
-  { q: "Do you provide hardscape services?",    a: "Yes — interlock patios, concrete driveways, accent walls, retaining walls, stone pathways, fences, decks and front porches." },
-  { q: "Do you install patios and retaining walls?", a: "Yes. Both are core specialties. Every patio is built on a properly compacted base, and every retaining wall is engineered for long-term stability." },
-  { q: "Do you offer mulch installation?",        a: "Yes. We supply and install hardwood, cedar and decorative stone mulch across Windsor and Essex County." },
-  { q: "Can you redesign my backyard?",           a: "Absolutely. Full backyard renovations are one of our most-requested services. We handle design, demolition, hardscape, planting and lighting under one roof." },
-  { q: "Do you provide lawn care services?",      a: "Yes — mowing, edging, fertilization, weeding, certified pesticide application, pruning and seasonal cleanups." },
-  { q: "How can I request a landscape quote?",  a: "Use our contact form, call +1 (226) 348-5048, or email moudgil1975@yahoo.com. We respond within one business day with next steps for a free on-site estimate." },
-];
